@@ -1,0 +1,34 @@
+    <p>
+      The compiling script takes all the code located in the code directory, all the ascii art in the ascii directory and all the text in the text directory, and gather all that in a single candybox2.js file. This candybox2.js file is used by the index.html file : this is why opening the index.html file launches the game.
+    </p>
+    <br/>
+    <h3>So, how do I create a quest?</h3>
+    <p>
+      There are two special directories to handle quests made for the Arena : <span class="code">code/arena/</span> for the TypeScript files (.ts) and <span class="code">ascii/arena</span> for the ascii art.
+    </p>
+    <p>
+      Before creating your own quest, I advise you to try understanding and modifying the Peaceful Forest (one of the quests currently available in the Arena). It is rather simple, and working on it helps to understand how the game's code is organized.
+    </p>
+    <p>
+      The peaceful forest consists of two TypeScript files : <span class="code">code/arena/peacefulForest/peacefulForest_Quest.ts</span> and <span class="code">code/arena/peacefulForest/peacefulForest_Tree.ts</span>, and one ascii art (the logo displayed on the Arena page), <span class="code">ascii/arena/peacefulForest/logo.txt</span>. So you just need to edit the TypeScript files, compile, and open the index.html file in your browser to test your changes!
+    </p>
+    <p>
+      Once you'll understand how the Peaceful Forest works, you can create your own quest by adding your own directory in the <span class="code">code/arena</span> and the <span class="code">ascii/arena</span> directories. Your quest should be hard and original! If you want it to be added to the game so that everyone can play it, send it to me by mail at aniwey@gmail.com. If your quest is interesting and functional, it will be added to the Arena. If it is hard and original enough, it will be added to the highlighted quests on top of the page :)
+    </p>
+    <br/>
+    <h3>Additional informations</h3>
+    <p>
+      <b>I want to test my quest, but the game starts from the beginning so I can't access the Arena.</b>
+      <br/><br/>
+      If you want to start the game with everything unlocked, the easiest way is to modify the <span class="code">code/main/Saving.ts</span> file. Just uncomment the lines from 17 to 135, and you'll start a game with everything unlocked, all the items in the inventory, and a lot of potions :)
+    </p>
+    <p>
+      <b>So, I made my quest, but I can't access it from the Arena?</b>
+      <br/><br/>
+      You must give the name of your quest in the Arena by modifying the line 51 in the <span class="code">code/main/TheArena.ts</span> file.
+    </p>
+    <br/>
+    <h3>I've got a question or a problem</h3>
+    <p>
+      You can chat with me and other quest makers on the game's IRC channel <a href="http://webchat.quakenet.org/?channels=candybox2&uio=d4">here</a> or the game's forum <a href="http://forum.candybox2.net">here</a>.
+    </p>
